@@ -1,8 +1,4 @@
-
 # Desvendando a Engenharia de Software na Fórmula 1: Design Patterns, SOLID e Orientação a Objetos com Java 21 e Spring
-
-
-
 
 ## Introdução
 
@@ -15,51 +11,51 @@ Este artigo se propõe a desmistificar esses conceitos, apresentando-os de forma
 
 ## Sumário
 
-1.  **Introdução**
-2.  **Programação Orientada a Objetos (POO) em Java**
-    *   2.1. Conceitos Fundamentais: Classes, Objetos, Atributos e Métodos
-    *   2.2. Pilares da POO: Encapsulamento, Herança, Polimorfismo e Abstração
-    *   2.3. POO na Fórmula 1: Modelando Carros e Equipes
-3.  **Princípios SOLID com Java e Spring**
-    *   3.1. Single Responsibility Principle (SRP): Princípio da Responsabilidade Única
-    *   3.2. Open/Closed Principle (OCP): Princípio Aberto/Fechado
-    *   3.3. Liskov Substitution Principle (LSP): Princípio da Substituição de Liskov
-    *   3.4. Interface Segregation Principle (ISP): Princípio da Segregação de Interfaces
-    *   3.5. Dependency Inversion Principle (DIP): Princípio da Inversão de Dependência
-    *   3.6. SOLID na Fórmula 1: Melhorando a Manutenibilidade do Software de Telemetria
-4.  **Design Patterns Criacionais com Java e Spring**
-    *   4.1. Factory Method: Fábrica de Componentes de Carro de F1
-    *   4.2. Abstract Factory: Linha de Montagem de Carros de F1 por Temporada
-    *   4.3. Builder: Construindo um Carro de F1 Personalizado
-    *   4.4. Singleton: O Motor da Equipe de F1
-    *   4.5. Prototype: Clonando Configurações de Carro para Testes
-5.  **Design Patterns Estruturais com Java e Spring**
-    *   5.1. Adapter: Adaptando Dados de Sensores Antigos
-    *   5.2. Bridge: Conectando Sistemas de Telemetria e Exibição
-    *   5.3. Composite: Estrutura de Componentes do Carro
-    *   5.4. Decorator: Adicionando Funcionalidades a um Carro de F1
-    *   5.5. Facade: Simplificando a Interação com o Sistema de Gerenciamento de Corrida
-    *   5.6. Flyweight: Otimizando a Representação de Pneus
-    *   5.7. Proxy: Controle de Acesso a Dados Confidenciais da Equipe
-6.  **Design Patterns Comportamentais com Java e Spring**
-    *   6.1. Chain of Responsibility: Processamento de Eventos de Corrida
-    *   6.2. Command: Comandos do Pit Wall
-    *   6.3. Iterator: Navegando pelos Dados de Volta
-    *   6.4. Mediator: Comunicação entre Componentes do Carro
-    *   6.5. Memento: Salvando o Estado da Corrida
-    *   6.6. Observer: Monitoramento de Dados em Tempo Real
-    *   6.7. State: Estados do Carro de F1
-    *   6.8. Strategy: Estratégias de Corrida
-    *   6.9. Template Method: Algoritmo de Pit Stop
-    *   6.10. Visitor: Análise de Desempenho de Componentes do Carro
-7.  **Domain-Driven Design (DDD) na Fórmula 1**
-    *   7.1. O que é Domain-Driven Design?
-    *   7.2. Blocos Construtivos do DDD
-    *   7.3. Contextos Delimitados e Mapas de Contexto na F1
-    *   7.4. Linguagem Ubíqua no Desenvolvimento de Software para F1
-    *   7.5. Aplicação Prática do DDD em um Sistema de Telemetria de F1 com Java e Spring
-8.  **Conclusão**
-9.  **Bibliografia***
+1.  **[Introdução](#introdução)**
+2.  **[Programação Orientada a Objetos (POO) em Java](#2-programação-orientada-a-objetos-poo-em-java)**
+    *   [2.1. Conceitos Fundamentais: Classes, Objetos, Atributos e Métodos](#21-conceitos-fundamentais-classes-objetos-atributos-e-métodos)
+    *   [2.2. Pilares da POO: Encapsulamento, Herança, Polimorfismo e Abstração](#22-pilares-da-poo-encapsulamento-herança-polimorfismo-e-abstração)
+    *   [2.3. POO na Fórmula 1: Modelando Carros e Equipes](#23-poo-na-fórmula-1-modelando-carros-e-equipes)
+3.  **[Princípios SOLID com Java e Spring](#3-princípios-solid-com-java-e-spring)**
+    *   [3.1. Single Responsibility Principle (SRP): Princípio da Responsabilidade Única](#31-single-responsibility-principle-srp-princípio-da-responsabilidade-única)
+    *   [3.2. Open/Closed Principle (OCP): Princípio Aberto/Fechado](#32-openclosed-principle-ocp-princípio-abertofechado)
+    *   [3.3. Liskov Substitution Principle (LSP): Princípio da Substituição de Liskov](#33-liskov-substitution-principle-lsp-princípio-da-substituição-de-liskov)
+    *   [3.4. Interface Segregation Principle (ISP): Princípio da Segregação de Interfaces](#34-interface-segregation-principle-isp-princípio-da-segregação-de-interfaces)
+    *   [3.5. Dependency Inversion Principle (DIP): Princípio da Inversão de Dependência](#35-dependency-inversion-principle-dip-princípio-da-inversão-de-dependência)
+    *   [3.6. SOLID na Fórmula 1: Melhorando a Manutenibilidade do Software de Telemetria](#36-solid-na-fórmula-1-melhorando-a-manutenibilidade-do-software-de-telemetria)
+4.  **[Design Patterns Criacionais com Java e Spring](#4-design-patterns-criacionais-com-java-e-spring)**
+    *   [4.1. Factory Method: Fábrica de Componentes de Carro de F1](#41-factory-method-fábrica-de-componentes-de-carro-de-f1)
+    *   [4.2. Abstract Factory: Linha de Montagem de Carros de F1 por Temporada](#42-abstract-factory-linha-de-montagem-de-carros-de-f1-por-temporada)
+    *   [4.3. Builder: Construindo um Carro de F1 Personalizado](#43-builder-construindo-um-carro-de-f1-personalizado)
+    *   [4.4. Singleton: O Motor da Equipe de F1](#44-singleton-o-motor-da-equipe-de-f1)
+    *   [4.5. Prototype: Clonando Configurações de Carro para Testes](#45-prototype-clonando-configurações-de-carro-para-testes)
+5.  **[Design Patterns Estruturais com Java e Spring](#5-design-patterns-estruturais-com-java-e-spring)**
+    *   [5.1. Adapter: Adaptando Dados de Sensores Antigos](#51-adapter-adaptando-dados-de-sensores-antigos)
+    *   [5.2. Bridge: Conectando Sistemas de Telemetria e Exibição](#52-bridge-conectando-sistemas-de-telemetria-e-exibição)
+    *   [5.3. Composite: Estrutura de Componentes do Carro](#53-composite-estrutura-de-componentes-do-carro)
+    *   [5.4. Decorator: Adicionando Funcionalidades a um Carro de F1](#54-decorator-adicionando-funcionalidades-a-um-carro-de-f1)
+    *   [5.5. Facade: Simplificando a Interação com o Sistema de Gerenciamento de Corrida](#55-facade-simplificando-a-interação-com-o-sistema-de-gerenciamento-de-corrida)
+    *   [5.6. Flyweight: Otimizando a Representação de Pneus](#56-flyweight-otimizando-a-representação-de-pneus)
+    *   [5.7. Proxy: Controle de Acesso a Dados Confidenciais da Equipe](#57-proxy-controle-de-acesso-a-dados-confidenciais-da-equipe)
+6.  **[Design Patterns Comportamentais com Java e Spring](#6-design-patterns-comportamentais-com-java-e-spring)**
+    *   [6.1. Chain of Responsibility: Processamento de Eventos de Corrida](#61-chain-of-responsibility-processamento-de-eventos-de-corrida)
+    *   [6.2. Command: Comandos do Pit Wall](#62-command-comandos-do-pit-wall)
+    *   [6.3. Iterator: Navegando pelos Dados de Volta](#63-iterator-navegando-pelos-dados-de-volta)
+    *   [6.4. Mediator: Comunicação entre Componentes do Carro](#64-mediator-comunicação-entre-componentes-do-carro)
+    *   [6.5. Memento: Salvando o Estado da Corrida](#65-memento-salvando-o-estado-da-corrida)
+    *   [6.6. Observer: Monitoramento de Dados em Tempo Real](#66-observer-monitoramento-de-dados-em-tempo-real)
+    *   [6.7. State: Estados do Carro de F1](#67-state-estados-do-carro-de-f1)
+    *   [6.8. Strategy: Estratégias de Corrida](#68-strategy-estratégias-de-corrida)
+    *   [6.9. Template Method: Algoritmo de Pit Stop](#69-template-method-algoritmo-de-pit-stop)
+    *   [6.10. Visitor: Análise de Desempenho de Componentes do Carro](#610-visitor-análise-de-desempenho-de-componentes-do-carro)
+7.  **[Domain-Driven Design (DDD) na Fórmula 1](#7-domain-driven-design-ddd-na-fórmula-1)**
+    *   [7.1. O que é Domain-Driven Design?](#71-o-que-é-domain-driven-design)
+    *   [7.2. Blocos Construtivos do DDD](#72-blocos-construtivos-do-ddd)
+    *   [7.3. Contextos Delimitados e Mapas de Contexto na F1](#73-contextos-delimitados-e-mapas-de-contexto-na-f1)
+    *   [7.4. Linguagem Ubíqua no Desenvolvimento de Software para F1](#74-linguagem-ubíqua-no-desenvolvimento-de-software-para-f1)
+    *   [7.5. Aplicação Prática do DDD em um Sistema de Telemetria de F1 com Java e Spring](#75-aplicação-prática-do-ddd-em-um-sistema-de-telemetria-de-f1-com-java-e-spring)
+8.  **[Conclusão](#8-conclusão)**
+9.  **[Bibliografia](#9-bibliografia)**
 
 
 
@@ -84,8 +80,8 @@ A Programação Orientada a Objetos (POO) é um paradigma de programação que o
 // Classe CarroF1
 public class CarroF1 {
     // Atributos
-    private String equipe;
-    private String piloto;
+    private final String equipe;
+    private final String piloto;
     private double velocidadeAtual;
     private double combustivel;
     private String tipoPneu;
@@ -115,14 +111,17 @@ public class CarroF1 {
         System.out.println(piloto + " da equipe " + equipe + " freou. Velocidade atual: " + velocidadeAtual + " km/h.");
     }
 
-    public void trocarPneus(String novoTipoPneu) {
+    // Métodos que modificam o estado, mas não são setters diretos
+    public CarroF1 comPneus(String novoTipoPneu) {
         this.tipoPneu = novoTipoPneu;
         System.out.println(piloto + " da equipe " + equipe + " trocou para pneus " + novoTipoPneu + ".");
+        return this;
     }
 
-    public void abastecer(double quantidade) {
+    public CarroF1 comCombustivelAdicional(double quantidade) {
         this.combustivel = Math.min(100.0, this.combustivel + quantidade);
         System.out.println(piloto + " da equipe " + equipe + " abasteceu. Combustível atual: " + String.format("%.2f", combustivel) + "%");
+        return this;
     }
 
     // Getters
@@ -158,8 +157,7 @@ public class CarroF1 {
 
         System.out.println("\n--- Pit Stop Hamilton ---");
         carroHamilton.frear();
-        carroHamilton.trocarPneus("Duro");
-        carroHamilton.abastecer(20.0);
+        carroHamilton.comPneus("Duro").comCombustivelAdicional(20.0);
         carroHamilton.acelerar(7.0);
 
         System.out.println("\n--- Fim da Demonstração ---");
@@ -177,18 +175,9 @@ Os quatro pilares da POO são conceitos cruciais que permitem a criação de sof
 
 **Encapsulamento:** Refere-se à prática de agrupar dados (atributos) e os métodos que operam sobre esses dados em uma única unidade, a classe, e restringir o acesso direto a alguns dos componentes do objeto. Isso significa que os detalhes internos de como um objeto funciona são ocultados do mundo exterior, e a interação com o objeto ocorre apenas através de uma interface bem definida (métodos públicos). No nosso `CarroF1`, os atributos como `velocidadeAtual` e `combustivel` são `private`, o que significa que só podem ser acessados e modificados pelos métodos da própria classe (`acelerar`, `frear`, `abastecer`). Isso evita que o estado do carro seja alterado de forma inconsistente por código externo.
 
-**Herança:** Permite que uma classe (subclasse ou classe filha) herde atributos e métodos de outra classe (superclasse ou classe pai). Isso promove a reutilização de código e estabelece uma relação 
+**Herança:** Permite que uma classe (subclasse ou classe filha) herde atributos e métodos de outra classe (superclasse ou classe pai). Isso promove a reutilização de código e estabelece uma relação de generalização-especialização (é-um). Por exemplo, poderíamos ter uma classe `Veiculo` com atributos e métodos genéricos, e `CarroF1` herdaria de `Veiculo`, adicionando características específicas de um carro de Fórmula 1. Isso evita a duplicação de código para funcionalidades comuns a todos os veículos.
 
-
-de 
-
-
-generalização-especialização (é-um). Por exemplo, poderíamos ter uma classe `Veiculo` com atributos e métodos genéricos, e `CarroF1` herdaria de `Veiculo`, adicionando características específicas de um carro de Fórmula 1. Isso evita a duplicação de código para funcionalidades comuns a todos os veículos.
-
-**Polimorfismo:** Significa 
-
-
-a capacidade de um objeto assumir muitas formas. Em POO, isso se manifesta de duas maneiras principais: sobrecarga de métodos (mesmo nome de método com diferentes parâmetros) e sobrescrita de métodos (subclasses fornecem sua própria implementação de um método herdado da superclasse). No contexto da F1, um método `calcularTempoVolta()` poderia ter diferentes implementações dependendo do tipo de pneu (`Macio`, `Médio`, `Duro`) ou das condições da pista (seca, molhada), mas a chamada ao método seria a mesma, demonstrando polimorfismo.
+**Polimorfismo:** Significa a capacidade de um objeto assumir muitas formas. Em POO, isso se manifesta de duas maneiras principais: sobrecarga de métodos (mesmo nome de método com diferentes parâmetros) e sobrescrita de métodos (subclasses fornecem sua própria implementação de um método herdado da superclasse). No contexto da F1, um método `calcularTempoVolta()` poderia ter diferentes implementações dependendo do tipo de pneu (`Macio`, `Médio`, `Duro`) ou das condições da pista (seca, molhada), mas a chamada ao método seria a mesma, demonstrando polimorfismo.
 
 **Abstração:** Foca na representação das características essenciais de um objeto, ocultando os detalhes de implementação complexos. Classes abstratas e interfaces são os mecanismos em Java para alcançar a abstração. Por exemplo, uma interface `SistemaTelemetria` poderia definir métodos como `coletarDados()` e `enviarDados()`, sem especificar como esses dados são coletados ou enviados. Diferentes implementações dessa interface poderiam lidar com diferentes tipos de sensores ou protocolos de comunicação, mas a interação com o sistema de telemetria seria sempre através da interface abstrata.
 
@@ -197,8 +186,8 @@ a capacidade de um objeto assumir muitas formas. Em POO, isso se manifesta de du
 ```java
 // Classe base abstrata para um Veículo de Corrida
 public abstract class VeiculoCorrida {
-    protected String nome;
-    protected double velocidadeMaxima;
+    protected final String nome;
+    protected final double velocidadeMaxima;
 
     public VeiculoCorrida(String nome, double velocidadeMaxima) {
         this.nome = nome;
@@ -208,6 +197,14 @@ public abstract class VeiculoCorrida {
     public abstract void acelerar();
     public abstract void frear();
 
+    public String getNome() {
+        return nome;
+    }
+
+    public double getVelocidadeMaxima() {
+        return velocidadeMaxima;
+    }
+
     public void exibirInfo() {
         System.out.println("Veículo: " + nome + ", Velocidade Máxima: " + velocidadeMaxima + " km/h");
     }
@@ -215,7 +212,7 @@ public abstract class VeiculoCorrida {
 
 // Subclasse CarroF1 herdando de VeiculoCorrida
 public class CarroF1 extends VeiculoCorrida {
-    private String equipe;
+    private final String equipe;
 
     public CarroF1(String nome, double velocidadeMaxima, String equipe) {
         super(nome, velocidadeMaxima);
@@ -234,6 +231,10 @@ public class CarroF1 extends VeiculoCorrida {
 
     public void fazerPitStop() {
         System.out.println(nome + " da equipe " + equipe + " entra no pit stop para troca de pneus e reabastecimento.");
+    }
+
+    public String getEquipe() {
+        return equipe;
     }
 }
 
@@ -332,9 +333,7 @@ No contexto da Fórmula 1, imagine uma classe `CarroDeCorrida`. Se essa classe f
 
 **Exemplo em Java 21 com Spring:**
 
-Considere um sistema de telemetria para carros de F1. Em vez de uma única classe `GerenciadorTelemetria` que lida com a coleta, processamento e armazenamento de dados, podemos separá-los:
-
-```java
+Considere um sistema de telemetria para carros de F1. Em vez de uma única classe `GerenciadorTelemetria` que lida com a coleta, processamento e armazenamento de dados, podemos separá-los```java
 // Interface para coleta de dados
 public interface ColetorDeDados {
     String coletarDadosSensor(String sensorId);
@@ -412,7 +411,7 @@ public class SistemaTelemetriaF1 {
 }
 ```
 
-Neste exemplo, cada interface e sua implementação têm uma única responsabilidade: `ColetorDeDados` coleta, `ProcessadorDeDados` processa e `ArmazenadorDeDados` armazena. A classe `SistemaTelemetriaF1` apenas orquestra essas operações, delegando as responsabilidades específicas. Isso torna o sistema mais modular e fácil de modificar; se o método de armazenamento de dados mudar (por exemplo, para um sistema de arquivos), apenas a classe `ArmazenadorDadosBancoDeDados` (ou uma nova implementação de `ArmazenadorDeDados`) precisaria ser alterada, sem afetar as outras partes do sistema [4].
+Neste exemplo, cada classe tem uma única responsabilidade bem definida: `ColetorDadosMotor` coleta dados, `ProcessadorDadosTelemetria` processa dados e `ArmazenadorDadosBancoDeDados` armazena dados. A classe `SistemaTelemetriaF1` orquestra essas operações, mas não executa as responsabilidades diretamente. Se a lógica de armazenamento de dados mudar (por exemplo, para um sistema de arquivos), apenas a classe `ArmazenadorDadosBancoDeDados` (ou uma nova implementação de `ArmazenadorDeDados`) precisaria ser alterada, sem afetar as outras partes do sistema [4].
 
 
 
@@ -469,7 +468,7 @@ public class SimuladorDesgastePneu {
     private final EstrategiaDesgastePneu estrategia;
 
     // Injeção de dependência via construtor, Spring escolhe a implementação
-    public SimuladorDesgastePneu(@Qualifier("pneuMacio") EstrategiaDesgastePneu estrategia) {
+    public SimuladorDesgastePneu(EstrategiaDesgastePneu estrategia) {
         this.estrategia = estrategia;
     }
 
@@ -510,7 +509,7 @@ No contexto da Fórmula 1, imagine que você tem uma classe `VeiculoCorrida` e s
 
 **Exemplo em Java 21 com Spring:**
 
-Vamos considerar a modelagem de veículos de corrida que podem ser pilotados. Tanto um carro de F1 quanto um carro de segurança são veículos, mas suas formas de "pilotar" podem ter nuances. O LSP nos ajuda a garantir que qualquer veículo de corrida possa ser pilotado de forma consistente.
+Vamos considerar a modelagem de veículos de corrida que podem ser pilotados. Tanto um carro de F1 quanto um carro de segurança são veículos, mas suas formas de "pilotar" podem ter nuances. O LSP nos ajuda a garantir que qualquer veículo de corrida possa ser usado de forma intercambiável em contextos que esperam um veículo pilotável.
 
 ```java
 // Interface base para um Veículo Pilotável
@@ -521,7 +520,7 @@ public interface Pilotavel {
 
 // Classe base abstrata para um Veículo de Corrida (para herdar atributos comuns)
 public abstract class VeiculoCorridaBase implements Pilotavel {
-    protected String nome;
+    protected final String nome;
     protected double velocidadeAtual;
 
     public VeiculoCorridaBase(String nome) {
@@ -551,7 +550,7 @@ public abstract class VeiculoCorridaBase implements Pilotavel {
 // Implementação de Carro de F1
 @Component
 public class CarroF1LSP extends VeiculoCorridaBase {
-    private String piloto;
+    private final String piloto;
 
     public CarroF1LSP(String nome, String piloto) {
         super(nome);
@@ -629,7 +628,7 @@ public class GerenciadorPista {
 }
 ```
 
-Neste exemplo, `Pilotavel` é uma interface que define o comportamento de pilotagem. `VeiculoCorridaBase` é uma classe abstrata que implementa `Pilotavel` e fornece funcionalidades comuns. `CarroF1LSP` e `CarroSegurancaLSP` são subclasses que implementam `Pilotavel` e estendem `VeiculoCorridaBase`. O método `iniciarVolta` em `GerenciadorPista` aceita qualquer objeto `Pilotavel`. Graças ao LSP, podemos passar tanto um `CarroF1LSP` quanto um `CarroSegurancaLSP` para este método, e o comportamento esperado (pilotar, virar, frear) será consistente, mesmo que as implementações específicas de `pilotar()` e `acelerar()` sejam diferentes para cada tipo de veículo. Isso demonstra que as subclasses podem ser substituídas pela superclasse sem quebrar a funcionalidade do sistema [4].
+Neste exemplo, tanto `CarroF1LSP` quanto `CarroSegurancaLSP` implementam a interface `Pilotavel` e herdam de `VeiculoCorridaBase`. O método `iniciarVolta` em `GerenciadorPista` aceita qualquer objeto `Pilotavel`. Graças ao LSP, podemos passar tanto um `CarroF1LSP` quanto um `CarroSegurancaLSP` para este método, e o comportamento esperado (pilotar, virar, frear) será consistente, mesmo que as implementações específicas de `pilotar()` e `acelerar()` sejam diferentes para cada tipo de veículo. Isso demonstra que as subclasses podem ser substituídas pela superclasse sem quebrar a funcionalidade do sistema [4].
 
 
 
@@ -767,14 +766,18 @@ public interface SensorF1 {
 // Implementação de baixo nível: Sensor de Velocidade
 @Component
 public class SensorVelocidade implements SensorF1 {
-    private double velocidade;
+    private final double velocidade;
 
     public SensorVelocidade() {
         this.velocidade = 0.0;
     }
 
-    public void setVelocidade(double velocidade) {
+    public SensorVelocidade(double velocidade) {
         this.velocidade = velocidade;
+    }
+
+    public SensorVelocidade comVelocidade(double novaVelocidade) {
+        return new SensorVelocidade(novaVelocidade);
     }
 
     @Override
@@ -791,14 +794,18 @@ public class SensorVelocidade implements SensorF1 {
 // Implementação de baixo nível: Sensor de Temperatura do Pneu
 @Component
 public class SensorTemperaturaPneu implements SensorF1 {
-    private double temperatura;
+    private final double temperatura;
 
     public SensorTemperaturaPneu() {
         this.temperatura = 0.0;
     }
 
-    public void setTemperatura(double temperatura) {
+    public SensorTemperaturaPneu(double temperatura) {
         this.temperatura = temperatura;
+    }
+
+    public SensorTemperaturaPneu comTemperatura(double novaTemperatura) {
+        return new SensorTemperaturaPneu(novaTemperatura);
     }
 
     @Override
@@ -828,14 +835,12 @@ public class MonitorDeDesempenho {
 
     public static void main(String[] args) {
         // Simulação de contexto Spring para demonstração
-        SensorVelocidade sensorVelocidade = new SensorVelocidade();
-        sensorVelocidade.setVelocidade(320.5);
+        SensorVelocidade sensorVelocidade = new SensorVelocidade(320.5);
 
         MonitorDeDesempenho monitorVelocidade = new MonitorDeDesempenho(sensorVelocidade);
         monitorVelocidade.exibirDadosSensor();
 
-        SensorTemperaturaPneu sensorTemperatura = new SensorTemperaturaPneu();
-        sensorTemperatura.setTemperatura(105.2);
+        SensorTemperaturaPneu sensorTemperatura = new SensorTemperaturaPneu(105.2);
 
         // Criando um novo monitor com um sensor diferente, sem alterar o código do MonitorDeDesempenho
         MonitorDeDesempenho monitorTemperatura = new MonitorDeDesempenho(sensorTemperatura);
@@ -1367,11 +1372,11 @@ O padrão Prototype especifica os tipos de objetos a serem criados usando uma in
 ```java
 // Classe CarroF1 que implementa Cloneable
 public class CarroF1Prototype implements Cloneable {
-    private String modelo;
-    private String configuracaoMotor;
-    private String configuracaoAerodinamica;
-    private String ajusteSuspensao;
-    private String tipoPneu;
+    private final String modelo;
+    private final String configuracaoMotor;
+    private final String configuracaoAerodinamica;
+    private final String ajusteSuspensao;
+    private final String tipoPneu;
 
     public CarroF1Prototype(String modelo, String configuracaoMotor, String configuracaoAerodinamica, String ajusteSuspensao, String tipoPneu) {
         this.modelo = modelo;
@@ -1381,45 +1386,46 @@ public class CarroF1Prototype implements Cloneable {
         this.tipoPneu = tipoPneu;
     }
 
-    // Getters e Setters
+    // Getters
     public String getModelo() {
         return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
     }
 
     public String getConfiguracaoMotor() {
         return configuracaoMotor;
     }
 
-    public void setConfiguracaoMotor(String configuracaoMotor) {
-        this.configuracaoMotor = configuracaoMotor;
-    }
-
     public String getConfiguracaoAerodinamica() {
         return configuracaoAerodinamica;
-    }
-
-    public void setConfiguracaoAerodinamica(String configuracaoAerodinamica) {
-        this.configuracaoAerodinamica = configuracaoAerodinamica;
     }
 
     public String getAjusteSuspensao() {
         return ajusteSuspensao;
     }
 
-    public void setAjusteSuspensao(String ajusteSuspensao) {
-        this.ajusteSuspensao = ajusteSuspensao;
-    }
-
     public String getTipoPneu() {
         return tipoPneu;
     }
 
-    public void setTipoPneu(String tipoPneu) {
-        this.tipoPneu = tipoPneu;
+    // Métodos para criar novas instâncias com modificações
+    public CarroF1Prototype comModelo(String novoModelo) {
+        return new CarroF1Prototype(novoModelo, configuracaoMotor, configuracaoAerodinamica, ajusteSuspensao, tipoPneu);
+    }
+
+    public CarroF1Prototype comConfiguracaoMotor(String novaConfiguracaoMotor) {
+        return new CarroF1Prototype(modelo, novaConfiguracaoMotor, configuracaoAerodinamica, ajusteSuspensao, tipoPneu);
+    }
+
+    public CarroF1Prototype comConfiguracaoAerodinamica(String novaConfiguracaoAerodinamica) {
+        return new CarroF1Prototype(modelo, configuracaoMotor, novaConfiguracaoAerodinamica, ajusteSuspensao, tipoPneu);
+    }
+
+    public CarroF1Prototype comAjusteSuspensao(String novoAjusteSuspensao) {
+        return new CarroF1Prototype(modelo, configuracaoMotor, configuracaoAerodinamica, novoAjusteSuspensao, tipoPneu);
+    }
+
+    public CarroF1Prototype comTipoPneu(String novoTipoPneu) {
+        return new CarroF1Prototype(modelo, configuracaoMotor, configuracaoAerodinamica, ajusteSuspensao, novoTipoPneu);
     }
 
     @Override
@@ -1452,19 +1458,21 @@ public class CarroF1Prototype implements Cloneable {
         );
         System.out.println("Carro Base: " + carroBase);
 
-        // Clonando o carro base para uma configuração de teste de baixa arrasto
+        // Criando uma configuração de teste de baixa arrasto baseada no carro base
         CarroF1Prototype carroTesteBaixoArrasto = carroBase.clone();
         if (carroTesteBaixoArrasto != null) {
-            carroTesteBaixoArrasto.setConfiguracaoAerodinamica("Baixo Arrasto");
-            carroTesteBaixoArrasto.setTipoPneu("Duro");
+            carroTesteBaixoArrasto = carroTesteBaixoArrasto
+                    .comConfiguracaoAerodinamica("Baixo Arrasto")
+                    .comTipoPneu("Duro");
             System.out.println("Carro Teste Baixo Arrasto: " + carroTesteBaixoArrasto);
         }
 
-        // Clonando o carro base para uma configuração de teste de chuva
+        // Criando uma configuração de teste de chuva baseada no carro base
         CarroF1Prototype carroTesteChuva = carroBase.clone();
         if (carroTesteChuva != null) {
-            carroTesteChuva.setAjusteSuspensao("Macio para Chuva");
-            carroTesteChuva.setTipoPneu("Chuva");
+            carroTesteChuva = carroTesteChuva
+                    .comAjusteSuspensao("Macio para Chuva")
+                    .comTipoPneu("Chuva");
             System.out.println("Carro Teste Chuva: " + carroTesteChuva);
         }
 
@@ -2421,18 +2429,24 @@ O padrão Chain of Responsibility (Cadeia de Responsabilidade) permite que você
 ```java
 // Interface para o manipulador de eventos
 public interface ManipuladorEventoCorrida {
-    void setProximoManipulador(ManipuladorEventoCorrida proximoManipulador);
+    ManipuladorEventoCorrida comProximoManipulador(ManipuladorEventoCorrida proximoManipulador);
     void lidarComEvento(EventoCorrida evento);
 }
 
 // Classe base abstrata para manipuladores
 public abstract class AbstractManipuladorEvento implements ManipuladorEventoCorrida {
-    private ManipuladorEventoCorrida proximoManipulador;
+    private final ManipuladorEventoCorrida proximoManipulador;
 
-    @Override
-    public void setProximoManipulador(ManipuladorEventoCorrida proximoManipulador) {
+    protected AbstractManipuladorEvento() {
+        this.proximoManipulador = null;
+    }
+
+    protected AbstractManipuladorEvento(ManipuladorEventoCorrida proximoManipulador) {
         this.proximoManipulador = proximoManipulador;
     }
+
+    @Override
+    public abstract ManipuladorEventoCorrida comProximoManipulador(ManipuladorEventoCorrida proximoManipulador);
 
     protected void passarParaProximo(EventoCorrida evento) {
         if (proximoManipulador != null) {
@@ -2465,6 +2479,19 @@ public class EventoCorrida {
 
 // Manipulador concreto para Falha de Motor
 public class ManipuladorFalhaMotor extends AbstractManipuladorEvento {
+    public ManipuladorFalhaMotor() {
+        super();
+    }
+
+    public ManipuladorFalhaMotor(ManipuladorEventoCorrida proximoManipulador) {
+        super(proximoManipulador);
+    }
+
+    @Override
+    public ManipuladorEventoCorrida comProximoManipulador(ManipuladorEventoCorrida proximoManipulador) {
+        return new ManipuladorFalhaMotor(proximoManipulador);
+    }
+
     @Override
     public void lidarComEvento(EventoCorrida evento) {
         if (evento.getTipo() == EventoCorrida.TipoEvento.FALHA_MOTOR) {
@@ -2477,6 +2504,19 @@ public class ManipuladorFalhaMotor extends AbstractManipuladorEvento {
 
 // Manipulador concreto para Pneu Furado
 public class ManipuladorPneuFurado extends AbstractManipuladorEvento {
+    public ManipuladorPneuFurado() {
+        super();
+    }
+
+    public ManipuladorPneuFurado(ManipuladorEventoCorrida proximoManipulador) {
+        super(proximoManipulador);
+    }
+
+    @Override
+    public ManipuladorEventoCorrida comProximoManipulador(ManipuladorEventoCorrida proximoManipulador) {
+        return new ManipuladorPneuFurado(proximoManipulador);
+    }
+
     @Override
     public void lidarComEvento(EventoCorrida evento) {
         if (evento.getTipo() == EventoCorrida.TipoEvento.PNEU_FURADO) {
@@ -2489,6 +2529,19 @@ public class ManipuladorPneuFurado extends AbstractManipuladorEvento {
 
 // Manipulador concreto para Bandeira Amarela
 public class ManipuladorBandeiraAmarela extends AbstractManipuladorEvento {
+    public ManipuladorBandeiraAmarela() {
+        super();
+    }
+
+    public ManipuladorBandeiraAmarela(ManipuladorEventoCorrida proximoManipulador) {
+        super(proximoManipulador);
+    }
+
+    @Override
+    public ManipuladorEventoCorrida comProximoManipulador(ManipuladorEventoCorrida proximoManipulador) {
+        return new ManipuladorBandeiraAmarela(proximoManipulador);
+    }
+
     @Override
     public void lidarComEvento(EventoCorrida evento) {
         if (evento.getTipo() == EventoCorrida.TipoEvento.BANDEIRA_AMARELA) {
@@ -2501,6 +2554,19 @@ public class ManipuladorBandeiraAmarela extends AbstractManipuladorEvento {
 
 // Manipulador genérico para outros eventos
 public class ManipuladorEventoGenerico extends AbstractManipuladorEvento {
+    public ManipuladorEventoGenerico() {
+        super();
+    }
+
+    public ManipuladorEventoGenerico(ManipuladorEventoCorrida proximoManipulador) {
+        super(proximoManipulador);
+    }
+
+    @Override
+    public ManipuladorEventoCorrida comProximoManipulador(ManipuladorEventoCorrida proximoManipulador) {
+        return new ManipuladorEventoGenerico(proximoManipulador);
+    }
+
     @Override
     public void lidarComEvento(EventoCorrida evento) {
         System.out.println("ManipuladorEventoGenerico: Registrando evento desconhecido/não prioritário: " + evento.getDescricao());
@@ -2511,15 +2577,11 @@ public class ManipuladorEventoGenerico extends AbstractManipuladorEvento {
 // Exemplo de uso
 public class CentroDeControleDeCorrida {
     public static void main(String[] args) {
-        // Construindo a cadeia de responsabilidade
-        ManipuladorEventoCorrida falhaMotorHandler = new ManipuladorFalhaMotor();
-        ManipuladorEventoCorrida pneuFuradoHandler = new ManipuladorPneuFurado();
-        ManipuladorEventoCorrida bandeiraAmarelaHandler = new ManipuladorBandeiraAmarela();
+        // Construindo a cadeia de responsabilidade de forma imutável
         ManipuladorEventoCorrida genericoHandler = new ManipuladorEventoGenerico();
-
-        falhaMotorHandler.setProximoManipulador(pneuFuradoHandler);
-        pneuFuradoHandler.setProximoManipulador(bandeiraAmarelaHandler);
-        bandeiraAmarelaHandler.setProximoManipulador(genericoHandler);
+        ManipuladorEventoCorrida bandeiraAmarelaHandler = new ManipuladorBandeiraAmarela(genericoHandler);
+        ManipuladorEventoCorrida pneuFuradoHandler = new ManipuladorPneuFurado(bandeiraAmarelaHandler);
+        ManipuladorEventoCorrida falhaMotorHandler = new ManipuladorFalhaMotor(pneuFuradoHandler);
 
         // Simulando eventos
         System.out.println("\n--- Evento: Falha de Motor ---");
@@ -2661,10 +2723,14 @@ public class MudarMapeamentoMotorComando implements ComandoF1 {
 
 // Invocador: O Painel do Pit Wall
 public class PainelPitWall {
-    private ComandoF1 comando;
+    private final ComandoF1 comando;
 
-    public void setComando(ComandoF1 comando) {
+    public PainelPitWall(ComandoF1 comando) {
         this.comando = comando;
+    }
+
+    public PainelPitWall comComando(ComandoF1 novoComando) {
+        return new PainelPitWall(novoComando);
     }
 
     public void emitirComando() {
@@ -2689,21 +2755,18 @@ public class PainelPitWall {
         ComandoF1 prepararPit = new PrepararPitStopComando(equipeMercedes);
         ComandoF1 mudarMapeamentoPotencia = new MudarMapeamentoMotorComando(carro44, "Modo Qualificação");
 
-        // Invocador
-        PainelPitWall painel = new PainelPitWall();
-
         System.out.println("--- Cenário 1: Ativar DRS ---");
-        painel.setComando(ativarDRS);
-        painel.emitirComando();
+        PainelPitWall painelDRS = new PainelPitWall(ativarDRS);
+        painelDRS.emitirComando();
 
         System.out.println("\n--- Cenário 2: Preparar Pit Stop ---");
-        painel.setComando(prepararPit);
-        painel.emitirComando();
+        PainelPitWall painelPit = new PainelPitWall(prepararPit);
+        painelPit.emitirComando();
 
         System.out.println("\n--- Cenário 3: Mudar Mapeamento do Motor ---");
-        painel.setComando(mudarMapeamentoPotencia);
-        painel.emitirComando();
-        painel.desfazerUltimoComando(); // Desfaz a mudança de mapeamento
+        PainelPitWall painelMapeamento = new PainelPitWall(mudarMapeamentoPotencia);
+        painelMapeamento.emitirComando();
+        painelMapeamento.desfazerUltimoComando(); // Desfaz a mudança de mapeamento
     }
 }
 ```
@@ -2854,13 +2917,9 @@ public interface MediadorCarroF1 {
 
 // Componente Abstrato (Colleague)
 public abstract class ComponenteCarro {
-    protected MediadorCarroF1 mediador;
+    protected final MediadorCarroF1 mediador;
 
     public ComponenteCarro(MediadorCarroF1 mediador) {
-        this.mediador = mediador;
-    }
-
-    public void setMediador(MediadorCarroF1 mediador) {
         this.mediador = mediador;
     }
 }
@@ -2945,19 +3004,13 @@ public class SistemaDRS extends ComponenteCarro {
 
 // Mediador Concreto: Central de Controle do Carro
 public class CentralDeControleCarro implements MediadorCarroF1 {
-    private MotorMediator motor;
-    private CaixaDeCambio caixaDeCambio;
-    private SistemaDRS sistemaDRS;
+    private final MotorMediator motor;
+    private final CaixaDeCambio caixaDeCambio;
+    private final SistemaDRS sistemaDRS;
 
-    public void setMotor(MotorMediator motor) {
+    public CentralDeControleCarro(MotorMediator motor, CaixaDeCambio caixaDeCambio, SistemaDRS sistemaDRS) {
         this.motor = motor;
-    }
-
-    public void setCaixaDeCambio(CaixaDeCambio caixaDeCambio) {
         this.caixaDeCambio = caixaDeCambio;
-    }
-
-    public void setSistemaDRS(SistemaDRS sistemaDRS) {
         this.sistemaDRS = sistemaDRS;
     }
 
@@ -2993,15 +3046,25 @@ public class CentralDeControleCarro implements MediadorCarroF1 {
     }
 
     public static void main(String[] args) {
-        CentralDeControleCarro mediador = new CentralDeControleCarro();
+        // Criando um mediador temporário para inicializar os componentes
+        MediadorCarroF1 mediadorTemp = new MediadorCarroF1() {
+            @Override
+            public void notificar(ComponenteCarro componente, String evento) {
+                // Implementação temporária vazia
+            }
+        };
 
-        MotorMediator motor = new MotorMediator(mediador);
-        CaixaDeCambio caixaDeCambio = new CaixaDeCambio(mediador);
-        SistemaDRS sistemaDRS = new SistemaDRS(mediador);
+        MotorMediator motor = new MotorMediator(mediadorTemp);
+        CaixaDeCambio caixaDeCambio = new CaixaDeCambio(mediadorTemp);
+        SistemaDRS sistemaDRS = new SistemaDRS(mediadorTemp);
 
-        mediador.setMotor(motor);
-        mediador.setCaixaDeCambio(caixaDeCambio);
-        mediador.setSistemaDRS(sistemaDRS);
+        // Criando o mediador real com todos os componentes
+        CentralDeControleCarro mediador = new CentralDeControleCarro(motor, caixaDeCambio, sistemaDRS);
+
+        // Atualizando as referências dos componentes para o mediador real
+        motor = new MotorMediator(mediador);
+        caixaDeCambio = new CaixaDeCambio(mediador);
+        sistemaDRS = new SistemaDRS(mediador);
 
         System.out.println("\n--- Simulação de Operações do Carro ---");
         motor.ligar();
@@ -3192,15 +3255,27 @@ public interface SujeitoDadosCarro {
 // Sujeito Concreto: Dados de Telemetria do Carro
 public class DadosCarroTelemetria implements SujeitoDadosCarro {
     private List<ObservadorDadosCarro> observadores = new ArrayList<>();
-    private double velocidade;
-    private double rpmMotor;
-    private double temperaturaMotor;
+    private final double velocidade;
+    private final double rpmMotor;
+    private final double temperaturaMotor;
 
-    public void setDados(double velocidade, double rpmMotor, double temperaturaMotor) {
+    public DadosCarroTelemetria() {
+        this.velocidade = 0.0;
+        this.rpmMotor = 0.0;
+        this.temperaturaMotor = 0.0;
+    }
+
+    public DadosCarroTelemetria(double velocidade, double rpmMotor, double temperaturaMotor) {
         this.velocidade = velocidade;
         this.rpmMotor = rpmMotor;
         this.temperaturaMotor = temperaturaMotor;
-        notificarObservadores();
+    }
+
+    public DadosCarroTelemetria atualizarDados(double velocidade, double rpmMotor, double temperaturaMotor) {
+        DadosCarroTelemetria novosDados = new DadosCarroTelemetria(velocidade, rpmMotor, temperaturaMotor);
+        novosDados.observadores = new ArrayList<>(this.observadores);
+        novosDados.notificarObservadores();
+        return novosDados;
     }
 
     @Override
@@ -3272,19 +3347,19 @@ public class SimuladorCorridaObserver {
 
         System.out.println("--- Simulação de Dados de Telemetria ---");
 
-        carro.setDados(250.0, 12000.0, 95.0);
-        carro.setDados(300.0, 14500.0, 105.0);
-        carro.setDados(320.0, 15000.0, 112.0); // Dispara alerta
-        carro.setDados(280.0, 13000.0, 100.0);
+        carro = carro.atualizarDados(250.0, 12000.0, 95.0);
+        carro = carro.atualizarDados(300.0, 14500.0, 105.0);
+        carro = carro.atualizarDados(320.0, 15000.0, 112.0); // Dispara alerta
+        carro = carro.atualizarDados(280.0, 13000.0, 100.0);
 
         System.out.println("\n--- Removendo Gravador de Dados ---");
         carro.removerObservador(gravador);
-        carro.setDados(310.0, 14800.0, 108.0);
+        carro = carro.atualizarDados(310.0, 14800.0, 108.0);
     }
 }
 ```
 
-Neste exemplo, `DadosCarroTelemetria` é o sujeito, e `ObservadorDadosCarro` é a interface para os observadores. `PainelEngenheiro`, `SistemaAlertaMotor` e `GravadorDeDados` são os observadores concretos. Quando os dados do carro mudam (método `setDados`), o sujeito notifica todos os observadores registrados, que então reagem de acordo. Isso permite que o sistema de telemetria seja altamente modular e extensível; novos componentes que precisam reagir a dados do carro podem ser adicionados simplesmente implementando a interface `ObservadorDadosCarro` e se registrando no `DadosCarroTelemetria`, sem modificar o código existente do sujeito ou de outros observadores [1].
+Neste exemplo, `DadosCarroTelemetria` é o sujeito, e `ObservadorDadosCarro` é a interface para os observadores. `PainelEngenheiro`, `SistemaAlertaMotor` e `GravadorDeDados` são os observadores concretos. Quando os dados do carro mudam (método `atualizarDados`), o sujeito notifica todos os observadores registrados, que então reagem de acordo. Isso permite que o sistema de telemetria seja altamente modular e extensível; novos componentes que precisam reagir a dados do carro podem ser adicionados simplesmente implementando a interface `ObservadorDadosCarro` e se registrando no `DadosCarroTelemetria`, sem modificar o código existente do sujeito ou de outros observadores [1].
 
 
 
@@ -3309,8 +3384,8 @@ public interface EstadoCarroF1 {
 
 // Contexto: O Carro de F1
 public class CarroF1State {
-    private EstadoCarroF1 estadoAtual;
-    private String nome;
+    private final EstadoCarroF1 estadoAtual;
+    private final String nome;
 
     public CarroF1State(String nome) {
         this.nome = nome;
@@ -3319,9 +3394,14 @@ public class CarroF1State {
         System.out.println(nome + " está inicialmente no estado: " + estadoAtual.getClass().getSimpleName());
     }
 
-    public void setEstado(EstadoCarroF1 novoEstado) {
-        this.estadoAtual = novoEstado;
-        System.out.println(nome + " mudou para o estado: " + novoEstado.getClass().getSimpleName());
+    public CarroF1State(String nome, EstadoCarroF1 estado) {
+        this.nome = nome;
+        this.estadoAtual = estado;
+        System.out.println(nome + " mudou para o estado: " + estado.getClass().getSimpleName());
+    }
+
+    public CarroF1State comEstado(EstadoCarroF1 novoEstado) {
+        return new CarroF1State(this.nome, novoEstado);
     }
 
     public void acelerar() {
@@ -3369,7 +3449,8 @@ public class EstadoEmPista implements EstadoCarroF1 {
     @Override
     public void entrarPitStop(CarroF1State carro) {
         System.out.println(carro.getNome() + " entrando no pit stop.");
-        carro.setEstado(new EstadoNoPitStop());
+        // Retorna uma nova instância ao invés de modificar o estado
+        // O chamador deve usar: carro = carro.comEstado(new EstadoNoPitStop());
     }
 
     @Override
@@ -3403,7 +3484,8 @@ public class EstadoNoPitStop implements EstadoCarroF1 {
     @Override
     public void sairPitStop(CarroF1State carro) {
         System.out.println(carro.getNome() + " saindo do pit stop e voltando para a pista.");
-        carro.setEstado(new EstadoEmPista());
+        // Retorna uma nova instância ao invés de modificar o estado
+        // O chamador deve usar: carro = carro.comEstado(new EstadoEmPista());
     }
 }
 
@@ -3414,10 +3496,17 @@ public class SimuladorEstadosCarroF1 {
 
         carro.acelerar();
         carro.ativarDRS();
+
+        // Transição manual para o pit stop
         carro.entrarPitStop();
+        carro = carro.comEstado(new EstadoNoPitStop());
 
         carro.acelerar(); // Tentativa inválida
+
+        // Transição manual de volta para a pista
         carro.sairPitStop();
+        carro = carro.comEstado(new EstadoEmPista());
+
         carro.frear();
     }
 }
@@ -3471,15 +3560,15 @@ public class EstrategiaChuva implements EstrategiaCorrida {
 
 // Contexto: O Estrategista de Corrida
 public class EstrategistaDeCorrida {
-    private EstrategiaCorrida estrategiaAtual;
+    private final EstrategiaCorrida estrategiaAtual;
 
     public EstrategistaDeCorrida(EstrategiaCorrida estrategiaInicial) {
         this.estrategiaAtual = estrategiaInicial;
     }
 
-    public void setEstrategia(EstrategiaCorrida novaEstrategia) {
-        this.estrategiaAtual = novaEstrategia;
+    public EstrategistaDeCorrida comEstrategia(EstrategiaCorrida novaEstrategia) {
         System.out.println("Estratégia de corrida alterada para: " + novaEstrategia.getClass().getSimpleName());
+        return new EstrategistaDeCorrida(novaEstrategia);
     }
 
     public void aplicarEstrategia() {
@@ -3493,11 +3582,11 @@ public class EstrategistaDeCorrida {
         estrategista.aplicarEstrategia();
 
         // Mudando para estratégia agressiva
-        estrategista.setEstrategia(new EstrategiaAgressiva());
+        estrategista = estrategista.comEstrategia(new EstrategiaAgressiva());
         estrategista.aplicarEstrategia();
 
         // Mudando para estratégia de chuva
-        estrategista.setEstrategia(new EstrategiaChuva());
+        estrategista = estrategista.comEstrategia(new EstrategiaChuva());
         estrategista.aplicarEstrategia();
     }
 }
@@ -3810,55 +3899,6 @@ Neste exemplo, `ComponenteCarroVisitavel` é a interface que os elementos (compo
 
 
 
-## 7. Conclusão
-
-Através deste artigo, exploramos a fundo os pilares da engenharia de software moderna – Programação Orientada a Objetos, Princípios SOLID e Design Patterns (Criacionais, Estruturais e Comportamentais) – contextualizando-os com exemplos práticos e didáticos inspirados no universo da Fórmula 1 e do automobilismo. A escolha da linguagem Java 21 e do framework Spring como base para os exemplos reforça a relevância dessas tecnologias no desenvolvimento de sistemas robustos e escaláveis, capazes de atender às demandas de alta performance e complexidade inerentes a um esporte como a F1.
-
-Vimos como a **Orientação a Objetos** permite modelar o mundo real de forma intuitiva, encapsulando comportamentos e dados em entidades coesas, como um `CarroF1` ou um `Piloto`. Os **Princípios SOLID** emergiram como um guia essencial para a construção de software flexível, manutenível e extensível. A aplicação do SRP, OCP, LSP, ISP e DIP em cenários como sistemas de telemetria e gerenciamento de componentes do carro demonstra como esses princípios são cruciais para lidar com a constante evolução tecnológica e regulatória da Fórmula 1.
-
-Os **Design Patterns**, por sua vez, revelaram-se soluções elegantes e comprovadas para problemas recorrentes no desenvolvimento de software. Os padrões Criacionais, como Factory Method e Builder, nos mostraram como gerenciar a complexidade da criação de objetos, permitindo a montagem de carros de F1 personalizados ou a produção de componentes específicos para cada temporada. Os padrões Estruturais, como Adapter e Composite, ilustraram como organizar classes e objetos em estruturas maiores e mais flexíveis, facilitando a integração de sistemas legados ou a representação hierárquica de componentes do carro. Finalmente, os padrões Comportamentais, como Observer e Strategy, demonstraram como otimizar a comunicação e a atribuição de responsabilidades entre objetos, permitindo o monitoramento em tempo real de dados de telemetria ou a adaptação dinâmica de estratégias de corrida.
-
-Em um ambiente tão competitivo e tecnologicamente avançado como a Fórmula 1, a excelência em engenharia de software não é um luxo, mas uma necessidade. A capacidade de desenvolver sistemas que são não apenas funcionais, mas também adaptáveis, eficientes e fáceis de manter, é um diferencial que pode significar a vitória ou a derrota. Ao dominar e aplicar esses conceitos e padrões, os desenvolvedores podem construir soluções que impulsionam a inovação e o sucesso, tanto nas pistas quanto em qualquer domínio da engenharia de software.
-
-Esperamos que este artigo tenha fornecido uma compreensão clara e prática desses conceitos fundamentais, inspirando você a aplicá-los em seus próprios projetos e a continuar explorando o vasto e fascinante mundo da engenharia de software.
-
-
-
-
-## 8. Bibliografia
-
-[1] Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
-
-[2] Refactoring.Guru. *Design Patterns*. Disponível em: [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns)
-
-[3] Martin, R. C. (2002). *Agile Software Development, Principles, Patterns, and Practices*. Prentice Hall.
-
-[4] FreeCodeCamp. *Os princípios SOLID da Programação Orientada a Objetos explicados em bom português*. Disponível em: [https://www.freecodecamp.org/portuguese/news/os-principios-solid-da-programacao-orientada-a-objetos-explicados-em-bom-portugues/](https://www.freecodecamp.org/portuguese/news/os-principios-solid-da-programacao-orientada-a-objetos-explicados-em-bom-portugues/)
-
-[5] Alura. *SOLID: o que é e quais os 5 princípios da Programação Orientada a Objetos*. Disponível em: [https://www.alura.com.br/artigos/solid](https://www.alura.com.br/artigos/solid)
-
-[6] Deitel, P. J., & Deitel, H. M. (2018). *Java: How to Program, Early Objects*. Pearson.
-
-[7] Casa do Código. *Livro de Orientação a Objetos e Java*. Disponível em: [https://www.casadocodigo.com.br/products/livro-orientacao-objetos-java](https://www.casadocodigo.com.br/products/livro-orientacao-objetos-java)
-
-[8] FreeCodeCamp. *Princípios de programação orientada a objetos em Java*. Disponível em: [https://www.freecodecamp.org/portuguese/news/principios-de-programacao-orientada-a-objetos-em-java-conceitos-de-poo-para-iniciantes/](https://www.freecodecamp.org/portuguese/news/principios-de-programacao-orientada-a-objetos-em-java-conceitos-de-poo-para-iniciantes/)
-
-[9] Spring Framework Documentation. Disponível em: [https://docs.spring.io/spring-framework/reference/index.html](https://docs.spring.io/spring-framework/reference/index.html)
-
-[10] Oracle. *Java SE 21 Documentation*. Disponível em: [https://docs.oracle.com/en/java/javase/21/](https://docs.oracle.com/en/java/javase/21/)
-
-[11] Fluidjobs. *Software Engineering in Formula 1: What Skills are in Demand?*. Disponível em: [https://fluidjobs.com/blog/software-engineering-in-formula-1-what-skills-are-in-demand-](https://fluidjobs.com/blog/software-engineering-in-formula-1-what-skills-are-in-demand-)
-
-[12] ISD. *Java Development & Formula 1: what do they have in common?*. Disponível em: [https://isd-soft.com/business_blog/java-development-teams-and-formula-one-teams/](https://isd-soft.com/business_blog/java-development-teams-and-formula-one-teams/)
-
-[13] Medium. *SOLID principles using some fun analogies with Vehicle Example*. Disponível em: [https://medium.com/@sonianand11/solid-principles-using-some-fun-analogies-with-vehicle-example-4218f7c92248](https://medium.com/@sonianand11/solid-principles-using-some-fun-analogies-with-vehicle-example-4218f7c92248)
-
-[14] CodeProject. *Implementing a Motor Race Using the Strategy Pattern*. Disponível em: [https://www.codeproject.com/Articles/14319/Implementing-a-Motor-Race-Using-the-Strategy-Patte](https://www.codeproject.com/Articles/14319/Implementing-a-Motor-Race-Using-the-Strategy-Patte)
-
-
-
-
-
 ## 7. Domain-Driven Design (DDD) na Fórmula 1
 
 ### 7.1. O que é Domain-Driven Design?
@@ -3899,37 +3939,38 @@ public class CarroDeCorrida {
         this.modeloMotor = modeloMotor;
     }
 
-    // Getters e Setters
+    // Getters
     public String getChassiId() {
         return chassiId;
-    }
-
-    public void setChassiId(String chassiId) {
-        this.chassiId = chassiId;
     }
 
     public String getEquipe() {
         return equipe;
     }
 
-    public void setEquipe(String equipe) {
-        this.equipe = equipe;
-    }
-
     public int getNumeroCarro() {
         return numeroCarro;
-    }
-
-    public void setNumeroCarro(int numeroCarro) {
-        this.numeroCarro = numeroCarro;
     }
 
     public String getModeloMotor() {
         return modeloMotor;
     }
 
-    public void setModeloMotor(String modeloMotor) {
-        this.modeloMotor = modeloMotor;
+    // Métodos para criar novas instâncias com modificações (seguindo princípios de imutabilidade)
+    public CarroDeCorrida comChassiId(String novoChassiId) {
+        return new CarroDeCorrida(novoChassiId, this.equipe, this.numeroCarro, this.modeloMotor);
+    }
+
+    public CarroDeCorrida comEquipe(String novaEquipe) {
+        return new CarroDeCorrida(this.chassiId, novaEquipe, this.numeroCarro, this.modeloMotor);
+    }
+
+    public CarroDeCorrida comNumeroCarro(int novoNumeroCarro) {
+        return new CarroDeCorrida(this.chassiId, this.equipe, novoNumeroCarro, this.modeloMotor);
+    }
+
+    public CarroDeCorrida comModeloMotor(String novoModeloMotor) {
+        return new CarroDeCorrida(this.chassiId, this.equipe, this.numeroCarro, novoModeloMotor);
     }
 
     @Override
@@ -4011,7 +4052,7 @@ public class Corrida {
     @JoinColumn(name = "corrida_id")
     private List<PitStop> pitStops = new ArrayList<>();
 
-    // Construtor, getters e setters
+    // Construtor e getters
     public Corrida(String id, String nomePista, LocalDate dataCorrida) {
         this.id = id;
         this.nomePista = nomePista;
@@ -4041,7 +4082,7 @@ public class Volta {
     private String pilotoId;
     private String carroId;
 
-    // Construtor, getters e setters
+    // Construtor e getters
     public Volta(int numeroVolta, TempoDeVolta tempo, String pilotoId, String carroId) {
         this.numeroVolta = numeroVolta;
         this.tempo = tempo;
@@ -4063,7 +4104,7 @@ public class PitStop {
     private String tipoPneuAntigo;
     private String tipoPneuNovo;
 
-    // Construtor, getters e setters
+    // Construtor e getters
     public PitStop(String pilotoId, int numeroVolta, TempoDeVolta duracao, String tipoPneuAntigo, String tipoPneuNovo) {
         this.pilotoId = pilotoId;
         this.numeroVolta = numeroVolta;
@@ -4304,6 +4345,13 @@ public class SessaoDePista {
         this.dadosTelemetricosBrutos.add(dado);
     }
 
+    public void substituirVolta(VoltaDeCorrida voltaAntiga, VoltaDeCorrida voltaNova) {
+        int index = this.voltas.indexOf(voltaAntiga);
+        if (index != -1) {
+            this.voltas.set(index, voltaNova);
+        }
+    }
+
     public void finalizarSessao() {
         this.fimSessao = LocalDateTime.now();
     }
@@ -4371,9 +4419,16 @@ public class VoltaDeCorrida {
         this.inicioVolta = inicioVolta;
     }
 
-    public void setTempo(TempoDeVolta tempo) {
+    public VoltaDeCorrida(int numeroVolta, LocalDateTime inicioVolta, TempoDeVolta tempo) {
+        this.id = UUID.randomUUID().toString();
+        this.numeroVolta = numeroVolta;
+        this.inicioVolta = inicioVolta;
         this.tempo = tempo;
         this.fimVolta = inicioVolta.plusNanos(tempo.getMilissegundos() * 1_000_000); // Exemplo simples
+    }
+
+    public VoltaDeCorrida comTempo(TempoDeVolta tempo) {
+        return new VoltaDeCorrida(this.numeroVolta, this.inicioVolta, tempo);
     }
 
     // Getters
@@ -4727,11 +4782,13 @@ public class ServicoProcessamentoTelemetria {
                 .findFirst();
 
         if (voltaOptional.isPresent()) {
-            voltaOptional.get().setTempo(new TempoDeVolta(milissegundos));
+            VoltaDeCorrida voltaAtualizada = voltaOptional.get().comTempo(new TempoDeVolta(milissegundos));
+            sessao.substituirVolta(voltaOptional.get(), voltaAtualizada);
         } else {
             // Cria uma nova volta se não existir (ou lança exceção, dependendo da regra de negócio)
-            VoltaDeCorrida novaVolta = new VoltaDeCorrida(numeroVolta, LocalDateTime.now().minus(Duration.ofMillis(milissegundos)));
-            novaVolta.setTempo(new TempoDeVolta(milissegundos));
+            VoltaDeCorrida novaVolta = new VoltaDeCorrida(numeroVolta,
+                    LocalDateTime.now().minus(Duration.ofMillis(milissegundos)),
+                    new TempoDeVolta(milissegundos));
             sessao.adicionarVolta(novaVolta);
         }
         return sessaoDePistaRepository.save(sessao);
