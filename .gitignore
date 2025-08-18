@@ -1,0 +1,43 @@
+# Arquivos e pastas para ignorar (Java / IDEs / SO / logs)
+
+# Compilados Java
+*.class
+*.ctxt
+
+# Pacotes (caso gerados localmente)
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+
+# Diretórios comuns de build
+target/
+build/
+out/
+
+# Logs e saídas temporárias
+*.log
+*.out
+*.tmp
+*.swp
+*.swo
+hs_err_pid*
+replay_pid*
+
+# Ferramentas/IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+.vscode/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Saídas dos scripts de smoke-test
+scripts/smoke-logs/
+scripts/smoke-summary.txt
