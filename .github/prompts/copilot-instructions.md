@@ -133,7 +133,7 @@ Diretrizes para geração de código, exemplos e documentação neste repositór
 - [ ] Dependências via interfaces (DIP).
 - [ ] Exemplos/testes executam nos scripts do repo.
 - [ ] Documentação/README atualizado.
- - [ ] Versionamento/compatibilidade de APIs/eventos conferidos (ex.: .v1, retrocompatibilidade).
+- [ ] Versionamento/compatibilidade de APIs/eventos conferidos (ex.: .v1, retrocompatibilidade).
 
 ---
 
