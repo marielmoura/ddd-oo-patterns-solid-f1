@@ -76,6 +76,12 @@ Este artigo se propõe a desmistificar esses conceitos, apresentando-os de forma
 - [DTO e Mapeamento entre Camadas](docs/dto-e-mapeamento.md)
 - [Testes e Builders](docs/testes-e-builders.md)
 
+## Prompts (geração acelerada)
+
+Para criar rapidamente agregados, VOs, eventos, serviços e casos de uso alinhados ao estilo do repo, consulte o catálogo:
+
+- [.github/prompts/README.md](.github/prompts/README.md)
+
 
 ## Scripts úteis
 
