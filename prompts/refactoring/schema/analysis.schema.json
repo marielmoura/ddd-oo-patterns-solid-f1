@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "analysis.json",
+  "type": "object",
+  "required": [
+    "content_hash",
+    "resumo_executivo",
+    "matriz_pontuacao",
+    "achados_detalhados",
+    "ddd_focus",
+    "arquitetura",
+    "testes_qualidade",
+    "backlog_melhoria",
+    "metadados"
+  ],
+  "properties": {
+  "content_hash": { "type": "string" },
+    "resumo_executivo": {
+      "type": "object",
+      "required": ["riscos_top5", "quick_wins_2_semanas"],
+      "properties": {
+        "riscos_top5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["titulo", "severidade", "prioridade", "impacto", "evidencias"]
+          }
+        },
+        "quick_wins_2_semanas": { "type": "array" }
+      },
+      "additionalProperties": false
+    },
+    "matriz_pontuacao": { "type": "object" },
+    "achados_detalhados": { "type": "object" },
+    "ddd_focus": { "type": "object" },
+    "arquitetura": { "type": "object" },
+    "testes_qualidade": { "type": "object" },
+    "backlog_melhoria": { "type": "array" },
+    "metadados": { "type": "object" }
+  },
+  "additionalProperties": false
+}

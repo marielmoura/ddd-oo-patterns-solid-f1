@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "progress.json",
+  "type": "object",
+  "required": ["batch_id","itens_processados","checklist_markdown","proximos_passos"],
+  "properties": {
+    "batch_id": { "type": "string" },
+    "itens_processados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id","antes_resumo","depois_resumo","status","arquivos_modificados","novos_testes","comando_validacao","resultado_validacao","commit"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "antes_resumo": { "type": "string" },
+          "depois_resumo": { "type": "string" },
+          "status": { "type": "string", "enum": ["Done","NeedsReview","Blocked"] },
+          "arquivos_modificados": { "type": "array", "items": { "type": "string" } },
+          "novos_testes": { "type": "array", "items": { "type": "string" } },
+          "comando_validacao": { "type": "array", "items": { "type": "string" } },
+          "resultado_validacao": {
+            "type": "object",
+            "required": ["sucesso","tests_passed","tests_failed"],
+            "properties": {
+              "sucesso": { "type": "boolean" },
+              "tests_passed": { "type": "integer", "minimum": 0 },
+              "tests_failed": { "type": "integer", "minimum": 0 }
+            },
+            "additionalProperties": false
+          },
+          "commit": {
+            "type": "object",
+            "required": ["hash","mensagem"],
+            "properties": {
+              "hash": { "type": "string" },
+              "mensagem": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "observacoes": { "type": "string" },
+          "telemetry": {
+            "type": "object",
+            "properties": {
+              "tests_total": { "type": "number" },
+              "coverage_media_tocados": { "type": "number" },
+              "duracao_segundos": { "type": "number" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "checklist_markdown": { "type": "string" },
+    "proximos_passos": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}
