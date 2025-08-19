@@ -1,3 +1,13 @@
+---
+id: ddd-create-aggregate
+mode: agent
+applyTo: "src/main/**"
+description: "Cria um Aggregate raiz seguindo DDD, com testes e repositório"
+output: "changeset"
+schemas:
+  - "../schema/changeset.schema.json"
+---
+
 <!-- Prompt: Gerar um Agregado de Domínio -->
 **Tarefa:** Crie um novo Agregado de Domínio chamado **[NomeDoAgregado]** que represente um conceito central do negócio de F1. Deve conter uma Entidade raiz **[NomeDoAgregado]** e entidades/value objects internos necessários.
 

@@ -1,3 +1,13 @@
+---
+id: ddd-create-value-object
+mode: agent
+applyTo: "src/main/**"
+description: "Cria um Value Object imutável com invariantes e testes"
+output: "changeset"
+schemas:
+  - "../schema/changeset.schema.json"
+---
+
 **Tarefa:** Criar um Value Object (VO) chamado **[NomeDoVO]**.
 
 **Contexto:** VO imutável que representa um conceito do domínio F1 (ex.: `CpfPiloto`, `TempoVolta`, `PotenciaMotor`). Deve validar invariantes na criação.

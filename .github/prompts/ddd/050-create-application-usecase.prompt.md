@@ -1,3 +1,13 @@
+---
+id: ddd-create-application-usecase
+mode: agent
+applyTo: "src/main/**"
+description: "Cria um Caso de Uso de Aplicação que orquestra o domínio"
+output: "changeset"
+schemas:
+  - "../schema/changeset.schema.json"
+---
+
 **Tarefa:** Criar um Caso de Uso de Aplicação chamado **[NomeDoCasoDeUso]**.
 
 **Objetivo:** Orquestrar o domínio para realizar uma ação de negócio ponta‑a‑ponta (sem detalhes de Infra). Ex.: `SelecionarVoo`, `PlanejarPitStop`, `CriarPacoteViagem`.

@@ -1,3 +1,13 @@
+---
+id: ddd-create-repository
+mode: agent
+applyTo: "src/main/**"
+description: "Cria uma interface de Repositório do Domínio (DIP)"
+output: "changeset"
+schemas:
+  - "../schema/changeset.schema.json"
+---
+
 **Tarefa:** Crie uma interface de Repositório do Domínio para a entidade **[Entidade]**.
 
 **Objetivo:** Expor operações orientadas ao negócio para recuperar e persistir **[Entidade]**, sem detalhes técnicos (JPA/DAO). A implementação fica na camada de Infra.

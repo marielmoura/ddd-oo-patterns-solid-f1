@@ -1,3 +1,13 @@
+---
+id: ddd-create-domain-event
+mode: agent
+applyTo: "src/main/**"
+description: "Cria um Evento de Domínio imutável, pronto para listeners"
+output: "changeset"
+schemas:
+  - "../schema/changeset.schema.json"
+---
+
 **Tarefa:** Criar um Evento de Domínio chamado **[NomeDoEvento]**.
 
 **Contexto:** Evento imutável que comunica algo que ocorreu no domínio (ex.: `CarroQuebrou`, `VoltaConcluida`, `PenalidadeAplicada`). Sem dependências de infra.

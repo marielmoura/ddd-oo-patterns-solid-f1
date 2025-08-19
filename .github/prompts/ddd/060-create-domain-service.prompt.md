@@ -1,3 +1,13 @@
+---
+id: ddd-create-domain-service
+mode: agent
+applyTo: "src/main/**"
+description: "Cria um Serviço de Domínio para lógica cruzando entidades/agregados"
+output: "changeset"
+schemas:
+  - "../schema/changeset.schema.json"
+---
+
 **Tarefa:** Crie uma classe de Serviço de Domínio chamada **[NomeDoServico]** que realize uma operação de negócio específica não atribuível a uma única Entidade.
 
 **Objetivo:** Encapsular lógica de negócio que cruza múltiplas entidades/agregados (ex.: `CalcularEstrategiaDePitStop`, `AplicarPenalidadeDeTempo`). Sem dependências de Infra; dependa apenas de interfaces de repositório e objetos do domínio.
