@@ -13,7 +13,9 @@
 
 # Diretórios comuns de build
 target/
+**/target/
 build/
+**/build/
 out/
 
 # Logs e saídas temporárias
